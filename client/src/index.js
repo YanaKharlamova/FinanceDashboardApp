@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 import { configureStore } from "@reduxjs/toolkit";
-import { applyMiddleware } from "@reduxjs/toolkit";// from "redux"
+import { applyMiddleware } from "@reduxjs/toolkit";
 import thunk from 'redux-thunk';
 import { Provider } from "react-redux";
 import quotesReducer from "./redux/quotesReducer";

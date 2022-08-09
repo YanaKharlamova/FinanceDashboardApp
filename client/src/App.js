@@ -1,10 +1,11 @@
-import FinanceDashboard from "./components/FinanceDashboard";
+import FinanceDashboard from "./components/FinanceDashboard/FinanceDashboard";
 
 function App() {
   return (
-    <>
-     <FinanceDashboard/>
-    </>
+    <div className="App">
+      <h1 className="dashboard-header">Finance Dashboard</h1>
+      <FinanceDashboard />
+    </div>
   );
 }
 export default App;

@@ -5,7 +5,6 @@ import {
 } from "./quotesTypes";
 
 const initialState = {
-  // loading: false,
   quotes: [],
   error: "",
 };
@@ -15,17 +14,14 @@ const quotesReducer = (state = initialState, action) => {
     case FETCH_QUOTES_REQUEST:
       return {
         ...state,
-        // loading: true
       };
     case FETCH_QUOTES_SUCCESS:
       return {
-        // loading: false,
         quotes: action.payload,
         error: "",
       };
     case FETCH_QUOTES_FAILURE:
       return {
-        // loading: false,
         quotes: [],
         error: action.payload,
       };

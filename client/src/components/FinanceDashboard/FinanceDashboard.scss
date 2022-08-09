@@ -1,0 +1,30 @@
+.dashboard {
+  & > &__finance-table {
+    background-color: var(--color-main-white);
+    font-family: inherit;
+    width: 100%;
+    border-collapse: collapse;
+    & td,
+    th {
+      padding: 12px 15px;
+      border: var(--line);
+      text-align: center;
+      font-size: 16px;
+    }
+    & th {
+      background-color: var(--color-grey-dark);
+      color: var(--color-main-white);
+      font-weight: 400;
+    }
+    & tbody > tr:nth-child(even) {
+      background-color: var(--color-grey-light);
+    }
+  }
+}
+.error {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-main-white);
+  letter-spacing: 2px;
+  background-color: var(--color-pink-error);
+}
